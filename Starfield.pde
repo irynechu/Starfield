@@ -1,26 +1,30 @@
-//your code here
+Particle[] particles;
 void setup()
 {
-	//your code here
+  particles = new Particle[300];
+  size(600,600);
 }
 void draw()
 {
-	//your code here
+  //your code here
 }
 class NormalParticle
 {
-	//your code here
+  //your code here
 }
 interface Particle
 {
-	//your code here
+  //your code here
 }
 class OddballParticle //uses an interface
 {
-	//your code here
+  //your code here
 }
-class JumboParticle //uses inheritance
+class JumboParticle extends NormalParticle//uses inheritance
 {
-	//your code here
+  public void show()
+  {
+    
+  }
+  
 }
-
