@@ -1,26 +1,40 @@
-//your code here
+NormalParticle[] particles;
 void setup()
 {
-	//your code here
+  particles = new NormalParticle[300];
+  for(int nI = 0; nI < particles.length; nI++)
+  {
+    particles[nI] = new NormalParticle();
+  }
+  particles[0]= new OddballParticle();
 }
 void draw()
 {
-	//your code here
+  size(600,600);
+  
 }
 class NormalParticle
 {
-	//your code here
+  int myX,myY;
+  double dSpeed, dDirection;
+  NormalParticle(int x, int y)
+  {
+    myX = x;
+    myY = y;
+    dSpeed = Math.random()*10;
+    dDirection = Math.PI*2*Math.random();
+  }
 }
 interface Particle
 {
-	//your code here
+  //your code here
 }
 class OddballParticle //uses an interface
 {
-	//your code here
+  //your code here
 }
 class JumboParticle //uses inheritance
 {
-	//your code here
+  //your code here
 }
 
